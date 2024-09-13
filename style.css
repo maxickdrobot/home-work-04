@@ -1,0 +1,54 @@
+/* 1 */
+body {
+    font-size: 20px;
+}
+
+/* 1 */
+p {
+    color: rgb(0, 81, 255);
+}
+
+/* 10 */
+.selector-class {
+    color: green;
+}
+
+/* 100 */
+#selector-id {
+    color: aqua;
+}
+
+/* 11 */
+a[href^="https://www.google"]{
+    color: orange;
+}
+
+/* 11 */
+a[href*="Hillel"]{
+    color: red;
+}
+
+/* 11 */
+.selector-nesting p{
+    color: blueviolet;    
+}
+
+/* 11 */
+.selector-child > p {
+    color: brown;
+}
+
+/* 2 */
+h1 + p {
+    color: chartreuse;
+}
+
+/* 112 */
+.selector-class-combo > h1 ~ p#selector-id-combo {
+    color: rgb(255, 0, 179);
+}
+
+/* 31 */
+.selector-class-combo_another a[href$=".ua"].link {
+    color: darkslategray;
+}

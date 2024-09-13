@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            <p>
+                Застососвуэться до тегів p, вага 1*
+            </p>
+            <p>
+                Застососвуэться до тегів p, вага 1*
+            </p>
+        </div>
+        <div>
+            <p class="selector-class">
+                Застосовується до тегів p, які мають клас "selector-class", вага 10*
+            </p>
+        </div>
+        <div>
+            <p id="selector-id">
+                Застосовується до тега p, який має id "selector-id", вага 100*
+            </p>
+        </div>
+        <div>
+            <p>
+                <a href="https://www.google.com.ua/?hl=uk">Посилання на google, яке має на початку атрибуту "https://www.google", вага 11*</a>
+            </p>
+            <p>
+                <a href="https://www.youtube.com/@HillelITSchool">Посилання на канал YouTube, яке має в атрибуті "Hillel", вага 11*</a>
+            </p>
+        </div>
+        <div class="selector-nesting">
+            <p>
+                Застосовується до тегів p, які вкладені в div з класом "selector-nesting", 1 рівень, вага 11*
+            </p>
+            <div>
+                <p>
+                    Застосовується до тегів p, які вкладені в div з класом "selector-nesting", 2 рівень, вага 11*
+                </p>
+            </div>
+        </div>
+        <div class="selector-child">
+            <p>
+                Застосовується до тегів p, які вкладені в div з класом "selector-nesting", вага 11*
+            </p>
+            <div>
+                <p>
+                    Не застосовується до тегів р, оскільки не є прмим нащадком.
+                </p>
+            </div>
+        </div>
+        <div>
+            <h1>Елемент, що є сусіднім</h1>
+            <p>
+                Застосовується до тега p, що є сусідом до h1, вага 2* 
+            </p>
+            <p>
+                Не застосовується до тега p, бо він не є сусідом до h1, вага 2* 
+            </p>
+        </div>
+        <div class="selector-class-combo">
+            <h1>Елемент, що є сусіднім 2</h1>
+            <p id="selector-id-combo">Застосовується до тегів p, що є дочірніми і cтоять пысля h1, вага 112* </p>
+        </div>
+        <div class="selector-class-combo_another">
+            <a href="https://www.google.com.ua" class="link">Застосовується до посилання, яке вкладене в div з класом "selector-class-combo-another" та має в атрибуті кінець ".ua" та клас "link", вага 31*</a>
+        </div>
+    </div>
+</body>
+</html>
